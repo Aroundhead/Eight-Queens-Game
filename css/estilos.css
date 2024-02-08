@@ -1,0 +1,63 @@
+table {
+    border-collapse: collapse;
+    /*definimos el color de la linea*/
+    border: 1px solid;
+  }
+  tr {
+    border: 1px solid;
+    height: 80px;
+  }
+  
+  /*tr:nth-child(odd) td:nth-child(even),*/
+  /*tr:nth-child(even) td:nth-child(odd) {*/
+  /*  background-color: #CACA22; /* Cambia el color de fondo para las celdas impares en filas impares y celdas pares en filas pares */
+  /*}*/
+
+  tr:nth-child(even) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd)
+        {
+            background: #FFFFFF;
+        }
+        
+        tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) 
+        {
+            background: #000;
+        }
+
+  td {
+    border: 1px solid;
+    width: 100px;
+  }
+  #contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap as needed */
+    align-items: flex-start; /* Align items to the start of the container */
+    justify-content: center;
+}
+
+#tabladiv {
+  flex: 1; /* Allow the table div to grow */
+  margin-right: 20px; /* Space between the board and the options */
+}
+
+#right-side {
+  display: flex;
+  flex-direction: column; /* Stack opciones and images vertically */
+  flex: 1; /* Allow the right side div to grow */
+}
+
+#opciones {
+  text-align: left; /* Align text of options to the left */
+}
+
+#images {
+  display: flex;
+  flex-direction: row; /* Cambio de column a row para alinear horizontalmente */
+  justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio suficiente */
+}
+
+/* Add additional CSS to make sure the table doesn't stretch too much */
+#tabla {
+  width: auto; /* Adjust the width as necessary */
+  margin: 0; /* Remove margin if any */
+}

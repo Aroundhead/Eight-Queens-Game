@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/funciones.js"></script>
+</head>
+
+  <body >
+    <h1 align="center">Problema de las 8 reinas</h1>
+    <h2 align="center">Coloca las 8 reinas en el tablero</h2>
+    <h3 align="center">No pueden atacarse entre ellas</h3>
+    <div id="contenedor">
+    <div id="tabladiv">
+       
+    <table align="center" border="1" id="tabla">
+      <tr>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+      </tr>
+
+      <tr>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+      </tr>
+
+      <tr>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+      </tr>
+
+      <tr>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+      </tr>
+
+      <tr>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+      </tr>
+
+      <tr>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+      </tr>
+
+      <tr>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+      </tr>
+
+      <tr>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+        <td onclick="colocarReina(this)"></td>
+      </tr>
+    </table> 
+    </div>
+    <div id="right-side">
+      <div id = "TableroCambiante">
+        <h2>Selecciona cualquiera de las siguientes opciones<br> para cambiar el color del tablero </h2>
+        
+      </div>
+      <div id = "Colores">
+        <input type="image" src="img/Blue.png" value="Azul" onclick="cambiarColor('blue')">
+        <input type="image" src="img/Green.png" value="Verde" onclick="cambiarColor('green')">
+        <input type="image" src="img/Yellow.png" value="Amarillo" onclick="cambiarColor('yellow')">
+      </div>
+      
+    <div id="opciones">
+      <input type="button" value="Reiniciar" onclick="reiniciar()">
+    <select name="" id="" onchange="solucion1(value)">
+      <option value="1">Solucion 1</option>
+      <option value="2">Solucion 2</option>
+      <option value="3">Solucion 3</option>
+      <option value="4">Solucion 4</option>
+      <option value="5">Solucion 5</option>
+      <option value="6">Solucion 6</option>
+    </select>
+
+    <br>
+
+    <label for="" id="reinasColoca">Reinas por colocar: 8 </label>
+    <br>
+    <label for="" id="reinasColoca1">Reinas colocadas: 0<br></label>
+
+  </div>    
+  <div id="images">
+    <br>
+    <h2>Selecciona la solución que quieras ver en el tablero</h2>
+    <br>
+    <div>
+      <input type="image" src="img/Solution1.png" value="1" onclick="cambiarTablero('1')">
+      <input type="image" src="img/Solution2.png" value="2" onclick="cambiarTablero('2')">
+      <input type="image" src="img/Solution3.png" value="3" onclick="cambiarTablero('3')">
+  </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
