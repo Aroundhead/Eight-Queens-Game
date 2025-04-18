@@ -2,6 +2,16 @@
 const Settings = (() => {
     let currentQueenImage = 'reina1.png';
     let currentBoardColor = '#b58863';
+    let currentAttackColor = '#ff8888';
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const attackColorInput = document.getElementById('attackColorPicker');
+        if (attackColorInput) {
+            currentAttackColor = attackColorInput.value;
+        }
+    });
 
     function setQueenImage(imageName) {
         currentQueenImage = imageName;
@@ -20,22 +30,51 @@ const Settings = (() => {
         return currentBoardColor;
     }
 
+    function setAttackColor(color) {
+        currentAttackColor = color;
+    }
+
+    function getAttackColor() {
+        return currentAttackColor;
+    }
+
     function repaintBoard() {
-        const board = document.getElementById('chessBoard');
+        const board = Utils.getBoard();
         if (!board) return;
         for (let row = 0; row < 8; row++) {
             for (let col = 0; col < 8; col++) {
                 const cell = board.rows[row].cells[col];
-                cell.style.backgroundColor = (row + col) % 2 === 0 ? '#ffffff' : currentBoardColor;
+                if (cell.classList.contains('attack') && !cell.style.backgroundImage) {
+                    cell.style.backgroundColor = currentAttackColor;
+                } else {
+                    cell.style.backgroundColor = (row + col) % 2 === 0 ? '#ffffff' : currentBoardColor;
+                }
             }
         }
     }
+    function repaintAttacks() {
+        const board = Utils.getBoard();
+        if (!board) return;
+        for (let row = 0; row < 8; row++) {
+            for (let col = 0; col < 8; col++) {
+                const cell = board.rows[row].cells[col];
+                if (cell.classList.contains('attack') && !cell.style.backgroundImage) {
+                    cell.style.backgroundColor = currentAttackColor;
+                }
+            }
+        }
+    }
+
 
     return {
         setQueenImage,
         getCurrentQueenImage,
         setBoardColor,
         getCurrentBoardColor,
+        setAttackColor,
+        getAttackColor,
+        repaintBoard,
+        repaintAttacks
     };
 })();
 
@@ -76,7 +115,7 @@ const Queen = (() => {
 
         blockAttacks(cell);
         queensPlaced++;
-        updateQueenCounter(); 
+        updateQueenCounter();
         checkWin();
     }
     function updateQueenCounter() {
@@ -104,10 +143,9 @@ const Queen = (() => {
         for (let row of board.rows) {
             for (let cell of row.cells) {
                 cell.classList.remove('attack');
-                cell.addEventListener('click', handleCellClick); // reactiva el click
+                cell.addEventListener('click', handleCellClick);
                 const rowIdx = parseInt(cell.dataset.row);
                 const colIdx = parseInt(cell.dataset.col);
-                // Repinta fondo normal del tablero (ajedrez)
                 cell.style.backgroundColor = (rowIdx + colIdx) % 2 === 0 ? '#ffffff' : Settings.getCurrentBoardColor();
             }
         }
@@ -145,11 +183,13 @@ const Queen = (() => {
     }
 
     function markCellAsBlocked(cell) {
-        if (!cell.style.backgroundImage) { // Si no tiene reina
+        if (!cell.style.backgroundImage) {
             cell.removeEventListener('click', handleCellClick);
             cell.classList.add('attack');
+            cell.style.backgroundColor = Settings.getAttackColor(); 
         }
     }
+
     function disableCell(cell) {
         if (!cell.style.backgroundImage) {
             cell.removeEventListener('click', handleCellClick);
@@ -237,7 +277,7 @@ const Board = (() => {
     function handleCellClick(event) {
         const cell = event.target;
 
-        // Si la celda está bloqueada, ignorar el click
+        
         if (cell.classList.contains('attack')) {
             return;
         }
@@ -255,9 +295,9 @@ const Board = (() => {
                 for (let cell of row.cells) {
                     cell.style.backgroundImage = '';
                     cell.style.backgroundColor = '';
-                    cell.classList.remove('attack'); // <--- limpia la clase roja
-                    cell.removeEventListener('click', handleCellClick); // <--- limpia eventos anteriores
-                    cell.addEventListener('click', handleCellClick); // <--- vuelve a poner click limpio
+                    cell.classList.remove('attack'); 
+                    cell.removeEventListener('click', handleCellClick); 
+                    cell.addEventListener('click', handleCellClick); 
                 }
             }
         }
@@ -266,14 +306,20 @@ const Board = (() => {
     }
 
     function paintBoard() {
-        const color = Settings.getCurrentBoardColor();
+        const board = Utils.getBoard();
+        if (!board) return;
         for (let row = 0; row < 8; row++) {
             for (let col = 0; col < 8; col++) {
-                const cell = boardElement.rows[row].cells[col];
-                cell.style.backgroundColor = (row + col) % 2 === 0 ? '#ffffff' : color;
+                const cell = board.rows[row].cells[col];
+                if (cell.classList.contains('attack') && !cell.style.backgroundImage) {
+                    cell.style.backgroundColor = Settings.getAttackColor();
+                } else {
+                    cell.style.backgroundColor = (row + col) % 2 === 0 ? '#ffffff' : Settings.getCurrentBoardColor();
+                }
             }
         }
     }
+
 
     return {
         createBoard,
@@ -317,15 +363,36 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('btnReset').addEventListener('click', () => {
         Board.resetBoard();
     });
+    document.getElementById('attackColorPicker').addEventListener('input', (event) => {
+        Settings.setAttackColor(event.target.value);
+        Settings.repaintAttacks(); 
+    });
 
     document.getElementById('queenImageSelector').addEventListener('change', (event) => {
         Settings.setQueenImage(event.target.value);
+        repaintQueens();
     });
+
+    function repaintQueens() {
+        const board = Utils.getBoard();
+        const queenImage = Settings.getCurrentQueenImage();
+
+        for (let row of board.rows) {
+            for (let cell of row.cells) {
+                if (cell.style.backgroundImage) {
+                    cell.style.backgroundImage = `url(./img/${queenImage})`;
+                    cell.style.backgroundSize = 'cover';
+                    cell.style.backgroundPosition = 'center';
+                }
+            }
+        }
+    }
+
 
     document.getElementById('boardColorSelector').addEventListener('change', (event) => {
         Settings.setBoardColor(event.target.value);
     });
-    // 🔥 Nuevo: también para el color picker
+    
     document.getElementById('boardColorPicker').addEventListener('input', (event) => {
         Settings.setBoardColor(event.target.value);
     });
