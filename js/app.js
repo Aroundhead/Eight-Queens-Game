@@ -1,1 +1,407 @@
-const _0xb8278c=_0x4af2;function _0x4af2(_0x329d83,_0x1c5a33){const _0x560307=_0x5603();return _0x4af2=function(_0x4af23c,_0x528178){_0x4af23c=_0x4af23c-0x13d;let _0x30b6f0=_0x560307[_0x4af23c];return _0x30b6f0;},_0x4af2(_0x329d83,_0x1c5a33);}(function(_0xaa8c03,_0x3ad2a5){const _0x23babb=_0x4af2,_0x3e94dd=_0xaa8c03();while(!![]){try{const _0x5d5242=-parseInt(_0x23babb(0x14d))/0x1+parseInt(_0x23babb(0x15a))/0x2+parseInt(_0x23babb(0x16f))/0x3*(-parseInt(_0x23babb(0x157))/0x4)+parseInt(_0x23babb(0x165))/0x5*(-parseInt(_0x23babb(0x14a))/0x6)+parseInt(_0x23babb(0x177))/0x7+-parseInt(_0x23babb(0x15e))/0x8*(parseInt(_0x23babb(0x170))/0x9)+parseInt(_0x23babb(0x16e))/0xa;if(_0x5d5242===_0x3ad2a5)break;else _0x3e94dd['push'](_0x3e94dd['shift']());}catch(_0x5837be){_0x3e94dd['push'](_0x3e94dd['shift']());}}}(_0x5603,0xc3da2));function _0x5603(){const _0x4fd157=['getCurrentQueenImage','backgroundPosition','display','getElementById','classList','5075874snLhix','Solución\x20no\x20disponible','block','1379477Ijzftz','contains','cells','boardContainer','attack','resetGameState','rows','reina1.png','removeEventListener','setBoardColor','4srcuyh','getBoard','#ffffff','3088688scaHYa','resetBoard','#ff8888','solutionSelector','144584ZPviWy','removeQueen','input','setQueenImage','change','winModal','row','5xidqjt','innerHTML','target','none','Reinas\x20restantes:\x20','addEventListener','loadSolution','center','col','21138940KvoaJb','3952716VzVAtX','99ukOJBv','setCellColor','cover','DOMContentLoaded','queenCounter','queenImageSelector','value','6200621PyiwQl','textContent','appendChild','backgroundColor','click','clearCell','getAttackColor','style','createElement','repaintAttacks','setAttackColor','getCurrentBoardColor','chessBoard','backgroundImage','attackColorPicker','backgroundSize','url(./img/','dataset','closeModal'];_0x5603=function(){return _0x4fd157;};return _0x5603();}const Settings=((()=>{const _0x43c370=_0x4af2;let _0x399b6d=_0x43c370(0x154),_0x11a9fb='#b58863',_0x1a12e8=_0x43c370(0x15c);document[_0x43c370(0x16a)](_0x43c370(0x173),()=>{const _0x3e9f2a=_0x43c370,_0x2b7dde=document[_0x3e9f2a(0x148)](_0x3e9f2a(0x140));_0x2b7dde&&(_0x1a12e8=_0x2b7dde[_0x3e9f2a(0x176)]);});function _0x400851(_0xe975){_0x399b6d=_0xe975;}function _0x33d487(){return _0x399b6d;}function _0x1722d2(_0x3c77b5){_0x11a9fb=_0x3c77b5,_0x298c43();}function _0x3e26b9(){return _0x11a9fb;}function _0x526db8(_0x365622){_0x1a12e8=_0x365622;}function _0x40fc82(){return _0x1a12e8;}function _0x298c43(){const _0x4be110=_0x43c370,_0x1376f7=Utils[_0x4be110(0x158)]();if(!_0x1376f7)return;for(let _0x227ab2=0x0;_0x227ab2<0x8;_0x227ab2++){for(let _0x9d3d86=0x0;_0x9d3d86<0x8;_0x9d3d86++){const _0x40e372=_0x1376f7[_0x4be110(0x153)][_0x227ab2][_0x4be110(0x14f)][_0x9d3d86];_0x40e372[_0x4be110(0x149)]['contains'](_0x4be110(0x151))&&!_0x40e372[_0x4be110(0x17e)][_0x4be110(0x13f)]?_0x40e372[_0x4be110(0x17e)][_0x4be110(0x17a)]=_0x1a12e8:_0x40e372[_0x4be110(0x17e)][_0x4be110(0x17a)]=(_0x227ab2+_0x9d3d86)%0x2===0x0?_0x4be110(0x159):_0x11a9fb;}}}function _0x5a1a62(){const _0x49fdfa=_0x43c370,_0x3ca6ed=Utils['getBoard']();if(!_0x3ca6ed)return;for(let _0x13636f=0x0;_0x13636f<0x8;_0x13636f++){for(let _0x4847de=0x0;_0x4847de<0x8;_0x4847de++){const _0x3fa5bb=_0x3ca6ed[_0x49fdfa(0x153)][_0x13636f]['cells'][_0x4847de];_0x3fa5bb[_0x49fdfa(0x149)]['contains'](_0x49fdfa(0x151))&&!_0x3fa5bb[_0x49fdfa(0x17e)][_0x49fdfa(0x13f)]&&(_0x3fa5bb[_0x49fdfa(0x17e)][_0x49fdfa(0x17a)]=_0x1a12e8);}}}return{'setQueenImage':_0x400851,'getCurrentQueenImage':_0x33d487,'setBoardColor':_0x1722d2,'getCurrentBoardColor':_0x3e26b9,'setAttackColor':_0x526db8,'getAttackColor':_0x40fc82,'repaintBoard':_0x298c43,'repaintAttacks':_0x5a1a62};})()),Utils=((()=>{function _0x5692e5(_0x11f4fe,_0x3b15a7){_0x11f4fe['style']['backgroundColor']=_0x3b15a7;}function _0x3331af(_0x549f78){const _0x2bbffd=_0x4af2;_0x549f78[_0x2bbffd(0x17e)][_0x2bbffd(0x17a)]='',_0x549f78[_0x2bbffd(0x17e)]['backgroundImage']='';}function _0x438c80(){const _0xd5fe5b=_0x4af2;return document['getElementById'](_0xd5fe5b(0x13e));}return{'setCellColor':_0x5692e5,'clearCell':_0x3331af,'getBoard':_0x438c80};})()),Queen=((()=>{const _0x2f9054=_0x4af2;let _0x2d430e=0x0;const _0x326ea4=0x8;function _0x581969(_0x5247d9){const _0x4aab90=_0x4af2;if(_0x2d430e>=_0x326ea4)return;const _0x4ac48a=Settings[_0x4aab90(0x145)]();_0x5247d9['style']['backgroundImage']=_0x4aab90(0x142)+_0x4ac48a+')',_0x5247d9[_0x4aab90(0x17e)][_0x4aab90(0x141)]='cover',_0x5247d9[_0x4aab90(0x155)](_0x4aab90(0x17b),_0xb8783d),_0x5f3772(_0x5247d9),_0x2d430e++,_0x566807(),_0xa8c015();}function _0x566807(){const _0x4fab92=_0x4af2,_0x4005e8=document[_0x4fab92(0x148)](_0x4fab92(0x174));_0x4005e8[_0x4fab92(0x178)]=_0x4fab92(0x169)+(_0x326ea4-_0x2d430e);}function _0x1d7955(){const _0x144a22=_0x4af2,_0x11059a=Utils['getBoard']();for(let _0x33b9dd of _0x11059a[_0x144a22(0x153)]){for(let _0xf2263b of _0x33b9dd[_0x144a22(0x14f)]){_0xf2263b[_0x144a22(0x17e)][_0x144a22(0x13f)]&&_0x5f3772(_0xf2263b);}}}function _0x45ac43(){const _0x12a7a2=_0x4af2,_0x22e81f=Utils['getBoard']();for(let _0x4aa26e of _0x22e81f['rows']){for(let _0x540a75 of _0x4aa26e[_0x12a7a2(0x14f)]){_0x540a75[_0x12a7a2(0x149)]['remove'](_0x12a7a2(0x151)),_0x540a75[_0x12a7a2(0x16a)](_0x12a7a2(0x17b),_0xb8783d);const _0x257feb=parseInt(_0x540a75['dataset'][_0x12a7a2(0x164)]),_0x212eef=parseInt(_0x540a75[_0x12a7a2(0x143)][_0x12a7a2(0x16d)]);_0x540a75[_0x12a7a2(0x17e)]['backgroundColor']=(_0x257feb+_0x212eef)%0x2===0x0?_0x12a7a2(0x159):Settings[_0x12a7a2(0x13d)]();}}}function _0x4a35e1(_0xc48715){const _0x5c040f=_0x4af2;_0xc48715[_0x5c040f(0x17e)][_0x5c040f(0x13f)]='',_0xc48715[_0x5c040f(0x149)]['remove'](_0x5c040f(0x151)),_0x2d430e--,_0x566807(),_0x45ac43(),_0x1d7955();}function _0x55ef82(){_0x2d430e=0x0,_0x566807();}function _0x5f3772(_0x4a9c68){const _0x88346=_0x4af2,_0x4faf87=Utils[_0x88346(0x158)](),_0x43210e=parseInt(_0x4a9c68['dataset']['row']),_0x55a53=parseInt(_0x4a9c68[_0x88346(0x143)]['col']);for(let _0xa01b40=0x0;_0xa01b40<0x8;_0xa01b40++){if(_0xa01b40!==_0x55a53)_0x4634ed(_0x4faf87['rows'][_0x43210e][_0x88346(0x14f)][_0xa01b40]);if(_0xa01b40!==_0x43210e)_0x4634ed(_0x4faf87[_0x88346(0x153)][_0xa01b40][_0x88346(0x14f)][_0x55a53]);}for(let _0x1f23ea=-0x7;_0x1f23ea<=0x7;_0x1f23ea++){if(_0x43210e+_0x1f23ea>=0x0&&_0x43210e+_0x1f23ea<0x8&&_0x55a53+_0x1f23ea>=0x0&&_0x55a53+_0x1f23ea<0x8&&_0x1f23ea!==0x0)_0x4634ed(_0x4faf87['rows'][_0x43210e+_0x1f23ea]['cells'][_0x55a53+_0x1f23ea]);if(_0x43210e+_0x1f23ea>=0x0&&_0x43210e+_0x1f23ea<0x8&&_0x55a53-_0x1f23ea>=0x0&&_0x55a53-_0x1f23ea<0x8&&_0x1f23ea!==0x0)_0x4634ed(_0x4faf87[_0x88346(0x153)][_0x43210e+_0x1f23ea][_0x88346(0x14f)][_0x55a53-_0x1f23ea]);}}function _0x4634ed(_0x1de39d){const _0x3b89e1=_0x4af2;!_0x1de39d[_0x3b89e1(0x17e)]['backgroundImage']&&(_0x1de39d[_0x3b89e1(0x155)](_0x3b89e1(0x17b),_0xb8783d),_0x1de39d['classList']['add'](_0x3b89e1(0x151)),_0x1de39d[_0x3b89e1(0x17e)][_0x3b89e1(0x17a)]=Settings[_0x3b89e1(0x17d)]());}function _0x77032(_0x2a3043){const _0x255783=_0x4af2;!_0x2a3043[_0x255783(0x17e)]['backgroundImage']&&(_0x2a3043[_0x255783(0x155)]('click',_0xb8783d),Utils[_0x255783(0x171)](_0x2a3043,'#ff8888'));}function _0x5a61e1(){const _0x4cbc5a=_0x4af2,_0x15c5d6=Utils[_0x4cbc5a(0x158)]();for(let _0x459c86 of _0x15c5d6[_0x4cbc5a(0x153)]){for(let _0x3ee60a of _0x459c86[_0x4cbc5a(0x14f)]){!_0x3ee60a[_0x4cbc5a(0x17e)]['backgroundImage']&&(Utils[_0x4cbc5a(0x17c)](_0x3ee60a),_0x3ee60a[_0x4cbc5a(0x16a)]('click',_0xb8783d));}}}function _0xb8783d(_0x2b1ead){const _0x413b4b=_0x4af2;_0x581969(_0x2b1ead[_0x413b4b(0x167)]);}function _0xa8c015(){_0x2d430e===_0x326ea4&&setTimeout(()=>{_0x21d93c();},0x64);}function _0x21d93c(){const _0x1d3ea8=_0x4af2,_0x2b6c34=document['getElementById'](_0x1d3ea8(0x163));_0x2b6c34[_0x1d3ea8(0x17e)][_0x1d3ea8(0x147)]=_0x1d3ea8(0x14c);}return document[_0x2f9054(0x16a)](_0x2f9054(0x173),()=>{const _0x5caa52=_0x2f9054,_0x48ccf0=document[_0x5caa52(0x148)](_0x5caa52(0x144));_0x48ccf0[_0x5caa52(0x16a)](_0x5caa52(0x17b),()=>{const _0x499e17=_0x5caa52;document[_0x499e17(0x148)](_0x499e17(0x163))[_0x499e17(0x17e)][_0x499e17(0x147)]=_0x499e17(0x168);}),window[_0x5caa52(0x16a)](_0x5caa52(0x17b),_0x102926=>{const _0x2598f0=_0x5caa52,_0x3628f2=document[_0x2598f0(0x148)](_0x2598f0(0x163));_0x102926[_0x2598f0(0x167)]===_0x3628f2&&(_0x3628f2[_0x2598f0(0x17e)][_0x2598f0(0x147)]='none');});}),{'placeQueen':_0x581969,'removeQueen':_0x4a35e1,'resetGameState':_0x55ef82};})()),Board=((()=>{const _0x27d203=_0x4af2,_0x53ac0c=document[_0x27d203(0x148)](_0x27d203(0x150));let _0x3a25c3;function _0x38add4(){const _0x6cdc7f=_0x27d203;_0x3a25c3=document[_0x6cdc7f(0x17f)]('table'),_0x3a25c3['id']='chessBoard';for(let _0x25b962=0x0;_0x25b962<0x8;_0x25b962++){const _0x21e39b=document[_0x6cdc7f(0x17f)]('tr');for(let _0x4aabe0=0x0;_0x4aabe0<0x8;_0x4aabe0++){const _0x5e3d81=document['createElement']('td');_0x5e3d81[_0x6cdc7f(0x143)][_0x6cdc7f(0x164)]=_0x25b962,_0x5e3d81[_0x6cdc7f(0x143)]['col']=_0x4aabe0,_0x5e3d81['addEventListener'](_0x6cdc7f(0x17b),_0x52c1bc),_0x21e39b['appendChild'](_0x5e3d81);}_0x3a25c3[_0x6cdc7f(0x179)](_0x21e39b);}_0x53ac0c[_0x6cdc7f(0x166)]='',_0x53ac0c['appendChild'](_0x3a25c3),_0xefba4b();}function _0x52c1bc(_0x55fc00){const _0x531903=_0x27d203,_0x7a8d18=_0x55fc00[_0x531903(0x167)];if(_0x7a8d18[_0x531903(0x149)]['contains'](_0x531903(0x151)))return;_0x7a8d18['style'][_0x531903(0x13f)]?Queen[_0x531903(0x15f)](_0x7a8d18):Queen['placeQueen'](_0x7a8d18);}function _0x2cc7ea(){const _0x289f7e=_0x27d203;if(_0x3a25c3)for(let _0x1f7afc of _0x3a25c3[_0x289f7e(0x153)]){for(let _0xf67c68 of _0x1f7afc[_0x289f7e(0x14f)]){_0xf67c68['style'][_0x289f7e(0x13f)]='',_0xf67c68[_0x289f7e(0x17e)][_0x289f7e(0x17a)]='',_0xf67c68[_0x289f7e(0x149)]['remove'](_0x289f7e(0x151)),_0xf67c68[_0x289f7e(0x155)](_0x289f7e(0x17b),_0x52c1bc),_0xf67c68['addEventListener'](_0x289f7e(0x17b),_0x52c1bc);}}Queen[_0x289f7e(0x152)](),_0xefba4b();}function _0xefba4b(){const _0x5bd312=_0x27d203,_0x3b8f93=Utils['getBoard']();if(!_0x3b8f93)return;for(let _0x128988=0x0;_0x128988<0x8;_0x128988++){for(let _0x6c068f=0x0;_0x6c068f<0x8;_0x6c068f++){const _0x415133=_0x3b8f93[_0x5bd312(0x153)][_0x128988][_0x5bd312(0x14f)][_0x6c068f];_0x415133['classList'][_0x5bd312(0x14e)](_0x5bd312(0x151))&&!_0x415133[_0x5bd312(0x17e)]['backgroundImage']?_0x415133['style'][_0x5bd312(0x17a)]=Settings['getAttackColor']():_0x415133[_0x5bd312(0x17e)][_0x5bd312(0x17a)]=(_0x128988+_0x6c068f)%0x2===0x0?_0x5bd312(0x159):Settings['getCurrentBoardColor']();}}}return{'createBoard':_0x38add4,'resetBoard':_0x2cc7ea};})()),Solutions=((()=>{function _0x383430(_0x3c52bf){const _0xb141b2=_0x4af2,_0x108e01=Utils[_0xb141b2(0x158)]();if(!_0x108e01)return;const _0x736799={'1':[[0x0,0x3],[0x1,0x6],[0x2,0x2],[0x3,0x7],[0x4,0x1],[0x5,0x4],[0x6,0x0],[0x7,0x5]],'2':[[0x0,0x4],[0x1,0x1],[0x2,0x3],[0x3,0x6],[0x4,0x2],[0x5,0x7],[0x6,0x5],[0x7,0x0]],'3':[[0x0,0x3],[0x1,0x1],[0x2,0x6],[0x3,0x2],[0x4,0x5],[0x5,0x7],[0x6,0x4],[0x7,0x0]]},_0x1a2e98=_0x736799[_0x3c52bf];if(!_0x1a2e98){alert(_0xb141b2(0x14b));return;}_0x1a2e98['forEach'](([_0x120b14,_0x1ab0c6])=>{const _0x3eb660=_0xb141b2,_0x11225f=_0x108e01[_0x3eb660(0x153)][_0x120b14][_0x3eb660(0x14f)][_0x1ab0c6];Queen['placeQueen'](_0x11225f);});}return{'loadSolution':_0x383430};})());document[_0xb8278c(0x16a)](_0xb8278c(0x173),()=>{const _0x31d8fb=_0xb8278c;Board['createBoard'](),document[_0x31d8fb(0x148)]('btnReset')[_0x31d8fb(0x16a)](_0x31d8fb(0x17b),()=>{const _0x1c9033=_0x31d8fb;Board[_0x1c9033(0x15b)]();}),document[_0x31d8fb(0x148)](_0x31d8fb(0x140))[_0x31d8fb(0x16a)](_0x31d8fb(0x160),_0x1eca46=>{const _0x5dc240=_0x31d8fb;Settings[_0x5dc240(0x181)](_0x1eca46[_0x5dc240(0x167)][_0x5dc240(0x176)]),Settings[_0x5dc240(0x180)]();}),document[_0x31d8fb(0x148)](_0x31d8fb(0x175))[_0x31d8fb(0x16a)]('change',_0x37a2b3=>{const _0x279596=_0x31d8fb;Settings[_0x279596(0x161)](_0x37a2b3[_0x279596(0x167)]['value']),_0x2ccfd5();});function _0x2ccfd5(){const _0x412a0b=_0x31d8fb,_0x3de0fb=Utils['getBoard'](),_0x99ed3=Settings['getCurrentQueenImage']();for(let _0x23b911 of _0x3de0fb['rows']){for(let _0x5e2d20 of _0x23b911[_0x412a0b(0x14f)]){_0x5e2d20[_0x412a0b(0x17e)][_0x412a0b(0x13f)]&&(_0x5e2d20[_0x412a0b(0x17e)][_0x412a0b(0x13f)]=_0x412a0b(0x142)+_0x99ed3+')',_0x5e2d20[_0x412a0b(0x17e)][_0x412a0b(0x141)]=_0x412a0b(0x172),_0x5e2d20[_0x412a0b(0x17e)][_0x412a0b(0x146)]=_0x412a0b(0x16c));}}}document['getElementById']('boardColorSelector')[_0x31d8fb(0x16a)](_0x31d8fb(0x162),_0x4e7e41=>{const _0x2bd0d3=_0x31d8fb;Settings[_0x2bd0d3(0x156)](_0x4e7e41[_0x2bd0d3(0x167)][_0x2bd0d3(0x176)]);}),document[_0x31d8fb(0x148)]('boardColorPicker')[_0x31d8fb(0x16a)]('input',_0x893d56=>{const _0x6c57b6=_0x31d8fb;Settings[_0x6c57b6(0x156)](_0x893d56[_0x6c57b6(0x167)][_0x6c57b6(0x176)]);}),document[_0x31d8fb(0x148)](_0x31d8fb(0x15d))['addEventListener'](_0x31d8fb(0x162),_0x370e94=>{const _0x137cbe=_0x31d8fb,_0x899199=_0x370e94[_0x137cbe(0x167)][_0x137cbe(0x176)];_0x899199&&(Board[_0x137cbe(0x15b)](),Solutions[_0x137cbe(0x16b)](_0x899199));});});
+// ------------------ Settings Module ------------------
+const Settings = (() => {
+    let currentQueenImage = 'reina1.png';
+    let currentBoardColor = '#b58863';
+    let currentAttackColor = '#ff8888';
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const attackColorInput = document.getElementById('attackColorPicker');
+        if (attackColorInput) {
+            currentAttackColor = attackColorInput.value;
+        }
+    });
+
+    function setQueenImage(imageName) {
+        currentQueenImage = imageName;
+    }
+
+    function getCurrentQueenImage() {
+        return currentQueenImage;
+    }
+
+    function setBoardColor(color) {
+        currentBoardColor = color;
+        repaintBoard();
+    }
+
+    function getCurrentBoardColor() {
+        return currentBoardColor;
+    }
+
+    function setAttackColor(color) {
+        currentAttackColor = color;
+    }
+
+    function getAttackColor() {
+        return currentAttackColor;
+    }
+
+    function repaintBoard() {
+        const board = Utils.getBoard();
+        if (!board) return;
+        for (let row = 0; row < 8; row++) {
+            for (let col = 0; col < 8; col++) {
+                const cell = board.rows[row].cells[col];
+                if (cell.classList.contains('attack') && !cell.style.backgroundImage) {
+                    cell.style.backgroundColor = currentAttackColor;
+                } else {
+                    cell.style.backgroundColor = (row + col) % 2 === 0 ? '#ffffff' : currentBoardColor;
+                }
+            }
+        }
+    }
+    function repaintAttacks() {
+        const board = Utils.getBoard();
+        if (!board) return;
+        for (let row = 0; row < 8; row++) {
+            for (let col = 0; col < 8; col++) {
+                const cell = board.rows[row].cells[col];
+                if (cell.classList.contains('attack') && !cell.style.backgroundImage) {
+                    cell.style.backgroundColor = currentAttackColor;
+                }
+            }
+        }
+    }
+
+
+    return {
+        setQueenImage,
+        getCurrentQueenImage,
+        setBoardColor,
+        getCurrentBoardColor,
+        setAttackColor,
+        getAttackColor,
+        repaintBoard,
+        repaintAttacks
+    };
+})();
+
+// ------------------ Utils Module ------------------
+const Utils = (() => {
+    function setCellColor(cell, color) {
+        cell.style.backgroundColor = color;
+    }
+
+    function clearCell(cell) {
+        cell.style.backgroundColor = '';
+        cell.style.backgroundImage = '';
+    }
+
+    function getBoard() {
+        return document.getElementById('chessBoard');
+    }
+
+    return {
+        setCellColor,
+        clearCell,
+        getBoard,
+    };
+})();
+
+// ------------------ Queen Module ------------------
+const Queen = (() => {
+    let queensPlaced = 0;
+    const totalQueens = 8;
+
+    function placeQueen(cell) {
+        if (queensPlaced >= totalQueens) return;
+
+        const image = Settings.getCurrentQueenImage();
+        cell.style.backgroundImage = `url(./img/${image})`;
+        cell.style.backgroundSize = 'cover';
+        cell.removeEventListener('click', handleCellClick);
+
+        blockAttacks(cell);
+        queensPlaced++;
+        updateQueenCounter();
+        checkWin();
+    }
+    function updateQueenCounter() {
+        const counter = document.getElementById('queenCounter');
+        counter.textContent = `Reinas restantes: ${totalQueens - queensPlaced}`;
+    }
+
+
+    function recalculateAttacks() {
+        const board = Utils.getBoard();
+        for (let row of board.rows) {
+            for (let cell of row.cells) {
+                if (cell.style.backgroundImage) {
+                    blockAttacks(cell);
+                }
+            }
+        }
+    }
+
+
+
+
+    function clearAllAttacks() {
+        const board = Utils.getBoard();
+        for (let row of board.rows) {
+            for (let cell of row.cells) {
+                cell.classList.remove('attack');
+                cell.addEventListener('click', handleCellClick);
+                const rowIdx = parseInt(cell.dataset.row);
+                const colIdx = parseInt(cell.dataset.col);
+                cell.style.backgroundColor = (rowIdx + colIdx) % 2 === 0 ? '#ffffff' : Settings.getCurrentBoardColor();
+            }
+        }
+    }
+
+    function removeQueen(cell) {
+        cell.style.backgroundImage = '';
+        cell.classList.remove('attack');
+        queensPlaced--;
+        updateQueenCounter();
+        clearAllAttacks();
+        recalculateAttacks();
+    }
+    function resetGameState() {
+        queensPlaced = 0;
+        updateQueenCounter();
+    }
+
+    function blockAttacks(cell) {
+        const board = Utils.getBoard();
+        const row = parseInt(cell.dataset.row);
+        const col = parseInt(cell.dataset.col);
+
+        for (let i = 0; i < 8; i++) {
+            if (i !== col) markCellAsBlocked(board.rows[row].cells[i]);
+            if (i !== row) markCellAsBlocked(board.rows[i].cells[col]);
+        }
+
+        for (let i = -7; i <= 7; i++) {
+            if (row + i >= 0 && row + i < 8 && col + i >= 0 && col + i < 8 && i !== 0)
+                markCellAsBlocked(board.rows[row + i].cells[col + i]);
+            if (row + i >= 0 && row + i < 8 && col - i >= 0 && col - i < 8 && i !== 0)
+                markCellAsBlocked(board.rows[row + i].cells[col - i]);
+        }
+    }
+
+    function markCellAsBlocked(cell) {
+        if (!cell.style.backgroundImage) {
+            cell.removeEventListener('click', handleCellClick);
+            cell.classList.add('attack');
+            cell.style.backgroundColor = Settings.getAttackColor(); 
+        }
+    }
+
+    function disableCell(cell) {
+        if (!cell.style.backgroundImage) {
+            cell.removeEventListener('click', handleCellClick);
+            Utils.setCellColor(cell, '#ff8888');
+        }
+    }
+
+    function unblockBoard() {
+        const board = Utils.getBoard();
+        for (let row of board.rows) {
+            for (let cell of row.cells) {
+                if (!cell.style.backgroundImage) {
+                    Utils.clearCell(cell);
+                    cell.addEventListener('click', handleCellClick);
+                }
+            }
+        }
+    }
+
+    function handleCellClick(event) {
+        placeQueen(event.target);
+    }
+
+    function checkWin() {
+        if (queensPlaced === totalQueens) {
+            setTimeout(() => {
+                showModal();
+            }, 100);
+        }
+    }
+
+    function showModal() {
+        const modal = document.getElementById('winModal');
+        modal.style.display = 'block';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const closeModalBtn = document.getElementById('closeModal');
+        closeModalBtn.addEventListener('click', () => {
+            document.getElementById('winModal').style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            const modal = document.getElementById('winModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+
+    return {
+        placeQueen,
+        removeQueen,
+        resetGameState,
+    };
+})();
+
+// ------------------ Board Module ------------------
+const Board = (() => {
+    const boardContainer = document.getElementById('boardContainer');
+    let boardElement;
+
+    function createBoard() {
+        boardElement = document.createElement('table');
+        boardElement.id = 'chessBoard';
+
+        for (let row = 0; row < 8; row++) {
+            const tr = document.createElement('tr');
+            for (let col = 0; col < 8; col++) {
+                const td = document.createElement('td');
+                td.dataset.row = row;
+                td.dataset.col = col;
+                td.addEventListener('click', handleCellClick);
+                tr.appendChild(td);
+            }
+            boardElement.appendChild(tr);
+        }
+
+        boardContainer.innerHTML = '';
+        boardContainer.appendChild(boardElement);
+
+        paintBoard();
+    }
+
+    function handleCellClick(event) {
+        const cell = event.target;
+
+        
+        if (cell.classList.contains('attack')) {
+            return;
+        }
+
+        if (cell.style.backgroundImage) {
+            Queen.removeQueen(cell);
+        } else {
+            Queen.placeQueen(cell);
+        }
+    }
+
+    function resetBoard() {
+        if (boardElement) {
+            for (let row of boardElement.rows) {
+                for (let cell of row.cells) {
+                    cell.style.backgroundImage = '';
+                    cell.style.backgroundColor = '';
+                    cell.classList.remove('attack'); 
+                    cell.removeEventListener('click', handleCellClick); 
+                    cell.addEventListener('click', handleCellClick); 
+                }
+            }
+        }
+        Queen.resetGameState();
+        paintBoard();
+    }
+
+    function paintBoard() {
+        const board = Utils.getBoard();
+        if (!board) return;
+        for (let row = 0; row < 8; row++) {
+            for (let col = 0; col < 8; col++) {
+                const cell = board.rows[row].cells[col];
+                if (cell.classList.contains('attack') && !cell.style.backgroundImage) {
+                    cell.style.backgroundColor = Settings.getAttackColor();
+                } else {
+                    cell.style.backgroundColor = (row + col) % 2 === 0 ? '#ffffff' : Settings.getCurrentBoardColor();
+                }
+            }
+        }
+    }
+
+
+    return {
+        createBoard,
+        resetBoard,
+    };
+})();
+
+// ------------------ Solutions Module ------------------
+const Solutions = (() => {
+    function loadSolution(solutionNumber) {
+        const board = Utils.getBoard();
+        if (!board) return;
+
+        const solutions = {
+            '1': [[0, 3], [1, 6], [2, 2], [3, 7], [4, 1], [5, 4], [6, 0], [7, 5]],
+            '2': [[0, 4], [1, 1], [2, 3], [3, 6], [4, 2], [5, 7], [6, 5], [7, 0]],
+            '3': [[0, 3], [1, 1], [2, 6], [3, 2], [4, 5], [5, 7], [6, 4], [7, 0]]
+        };
+
+        const selectedSolution = solutions[solutionNumber];
+        if (!selectedSolution) {
+            alert('Solución no disponible');
+            return;
+        }
+
+        selectedSolution.forEach(([row, col]) => {
+            const cell = board.rows[row].cells[col];
+            Queen.placeQueen(cell);
+        });
+    }
+
+    return {
+        loadSolution,
+    };
+})();
+
+// ------------------ Main Script ------------------
+document.addEventListener('DOMContentLoaded', () => {
+    Board.createBoard();
+
+    document.getElementById('btnReset').addEventListener('click', () => {
+        Board.resetBoard();
+    });
+    document.getElementById('attackColorPicker').addEventListener('input', (event) => {
+        Settings.setAttackColor(event.target.value);
+        Settings.repaintAttacks(); 
+    });
+
+    document.getElementById('queenImageSelector').addEventListener('change', (event) => {
+        Settings.setQueenImage(event.target.value);
+        repaintQueens();
+    });
+
+    function repaintQueens() {
+        const board = Utils.getBoard();
+        const queenImage = Settings.getCurrentQueenImage();
+
+        for (let row of board.rows) {
+            for (let cell of row.cells) {
+                if (cell.style.backgroundImage) {
+                    cell.style.backgroundImage = `url(./img/${queenImage})`;
+                    cell.style.backgroundSize = 'cover';
+                    cell.style.backgroundPosition = 'center';
+                }
+            }
+        }
+    }
+
+
+    document.getElementById('boardColorSelector').addEventListener('change', (event) => {
+        Settings.setBoardColor(event.target.value);
+    });
+    
+    document.getElementById('boardColorPicker').addEventListener('input', (event) => {
+        Settings.setBoardColor(event.target.value);
+    });
+
+    document.getElementById('solutionSelector').addEventListener('change', (event) => {
+        const selected = event.target.value;
+        if (selected) {
+            Board.resetBoard();
+            Solutions.loadSolution(selected);
+        }
+    });
+});
