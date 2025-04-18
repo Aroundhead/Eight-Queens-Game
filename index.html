@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Problema de las 8 Reinas</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1>Problema de las 8 Reinas</h1>
+    <p id="gameDescription">
+        El objetivo del juego es colocar 8 reinas en el tablero de ajedrez sin que ninguna se ataque entre sí.
+    </p>
+    <div id="controls">
+        <button id="btnReset">Reiniciar</button>
+    
+        <select id="queenImageSelector">
+            <option value="reina1.png">Reina 1</option>
+            <option value="reina2.png">Reina 2</option>
+            <option value="reina3.png">Reina 3</option>
+        </select>
+    
+        <select id="boardColorSelector">
+            <option value="#b58863">Clásico Marrón</option>
+            <option value="#769656">Verde Oliva</option>
+            <option value="#333333">Negro</option>
+        </select>
+    
+        <input type="color" id="boardColorPicker" value="#b58863" title="Selecciona cualquier color personalizado">
+    
+        <select id="solutionSelector">
+            <option value="">Seleccionar solución</option>
+            <option value="1">Solución 1</option>
+            <option value="2">Solución 2</option>
+            <option value="3">Solución 3</option>
+        </select>
+    </div>
+    
+    <p id="queenCounter">Reinas restantes: 8</p> <!-- 👈 También añadimos el contador aquí -->
+    
+    <div id="boardContainer"></div>
+    <div id="winModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModal">&times;</span>
+            <h2>¡Felicidades!</h2>
+            <p>¡Has colocado correctamente las 8 reinas!</p>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script> 
+
+</body>
+
+</html>
