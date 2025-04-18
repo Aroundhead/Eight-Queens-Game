@@ -16,7 +16,7 @@ Simply:
 
 1. **Clone the repository to your computer:**
 ```bash
-git clone https://github.com/YourUsername/Eight-Queens-Game.git
+git clone [https://github.com/YourUsername/Eight-Queens-Game.git](https://github.com/Aroundhead/Eight-Queens-Game.git)
 ```
 
 2. **Switch to the directory:**
